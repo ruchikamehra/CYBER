@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>"swapping of paragraphs"</title>
+</head>
+<body>
+<p id="demo1">"this is the 1 demo paragraph"</p>
+<p id="demo2">"this is the 2 demo paragraph"</p>
+<button onclick=myfunction()>try me</button>
+<script>
+function myfunction()
+{
+ p1=document.getElementById("demo1");
+ p2=document.getElementById("demo2");
+ p1content=p1.innerText;
+ p2content=p2.innerText;
+ 
+ p1.innerText=p2content;
+ p2.innerText=p1content;
+ 
+console.log(p1content);
+console.log(p2content);
+}
+</script>
+</body>
+</html>
+
+ 
