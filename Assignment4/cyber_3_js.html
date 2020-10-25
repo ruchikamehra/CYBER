@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p>GCD of two number</p>
+<p id="demo"></p>
+</head>
+<body>
+<script>
+
+var n1=Number(prompt("enter the first number"));
+var n2=Number(prompt("enter the second number"));
+var i;
+for(i=1;i<=n1 && i<=n2;++i)
+{
+ if(n1%i==0 && n2%i==0)
+ {
+  var hcf=i;
+  }
+}
+document.getElementById("demo").innerHTML=hcf;
+</script>
+</body>
+</html>
+
